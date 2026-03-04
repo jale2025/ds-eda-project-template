@@ -1,0 +1,16 @@
+Client: Nicole Johnson
+Buyer
+Lively, central neighborhood, middle price range, right timing (within a year)
+
+Assumptions:
+- Output primarily which price can be expected in which month
+-> (x axis month, y axis price -> linechart, barchart or histogram)
+- Output secondary house list with available features
+(x features y count available houses -> linechart, barchart or histogram)
+- From variables 1 or 2 will have the biggest impact on price (location and square feet)
+- Central neighborhood or city has a higher price
+
+Questions:
+1. How to determinte the right timing for buying?
+-> Assumption: Data from multiple Years (12 month trend to find the lowest price)
+2. How to determinte a Lively and central neighborhood?
