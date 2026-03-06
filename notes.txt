@@ -23,7 +23,7 @@ Missing Data in the dataset regarding the Client
 -> we intend to boy within one year but data only covers roughly a year
 
 ----
-Page 5 and 6 (Data Filtering & cleaning)
+Page 5 (Data Filtering & cleaning)
 Filtering part:
 - Zip code filtering for central as every zip code over >= 98100
 -> defined by ourselves (looked like it on the map) 
@@ -35,6 +35,9 @@ Cleaning part:
 - Filled nan values with 0 for view, sqft_basement, yr_renovated and waterfront
 - cleaning data in yr_renovated as some rows hard a valid year + 0.0 as a string
 -> cleaning to valid year to int datatype
+
+----
+Page 6 (Data filtering geo maps)
 
 Geo Map Pictures:
 - Left is map of all zipcodes found in dataset for Seattle
