@@ -1,0 +1,41 @@
+Client: Nicole Johnson
+Buyer
+Lively, central neighborhood, middle price range, right timing (within a year)
+
+Assumptions:
+- Output primarily which price can be expected in which month
+-> (x axis month, y axis price -> linechart, barchart or histogram)
+- Output secondary house list with available features
+(x features y count available houses -> linechart, barchart or histogram)
+- From variables 1 or 2 will have the biggest impact on price (location and square feet)
+- Central neighborhood or city has a higher price
+
+Questions:
+1. How to determinte the right timing for buying?
+-> Assumption: Data from multiple Years (12 month trend to find the lowest price)
+2. How to determinte a Lively and central neighborhood?
+
+----
+Possible Improvements:
+----
+- remove lat and long from bar chart correlation? (completed)
+----
+Hypothesis One (completed)
+- chart does not represent the entire Hypothesis
+- square feet lot and living group over in bins (like 10)
+-> Assumption price rises with more square feet
+-> two charts, one for lot and living
+----
+Hypothesis Three (completed)
+-> expand second half year 2014 to include all month all December
+-> Argument: Hypothesis should reflect entire second half year. 
+-> Unfortunatly no data for a full first half year. We need to work with what we have to be consistent
+----
+Seattle Map Comparison Before vs after (all zipcodes vs zipcodes over 98100) (completed)
+-> In presentation in one slide if Possible
+----
+Give Recommendation for house zipcode (completed)
+Two charts zipcode and square feet (each for living and lot)
+-> give Recommendation as "cheapest zipcode" as combination of both
+----
+- make the words living and lot more clear (possibly in charts and presentation)

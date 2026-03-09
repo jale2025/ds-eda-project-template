@@ -1,0 +1,132 @@
+Notes presentation:
+----
+Beginning Part 1 Jan
+----
+Page 1 (Cover)
+- Who are we?
+- Welcome to our presentation
+
+----
+Page 2 (Table of contents)
+- Go through every topic
+- Quick info who does which topic (first and second part)
+
+----
+Page 3 (Client)
+- Who are we representing?
+- What stackholder are we?
+- What are our requirements?
+
+----
+Page 4 (Dataset)
+
+Missing Data in the dataset regarding the Client
+-> We cant measure a livery neighborhood
+-> we intend to boy within one year but data only covers roughly a year
+
+----
+Page 5 (Data Filtering & cleaning)
+Filtering part:
+- Zip code filtering for central as every zip code over >= 98100
+-> defined by ourselves (looked like it on the map) 
+to avoid using a list of fitting zip codes
+- Filtered dataset to only 40% to 60% price range (middle price range)
+
+Cleaning part:
+- now rows were dropped (only filtered)
+- Filled nan values with 0 for view, sqft_basement, yr_renovated and waterfront
+- cleaning data in yr_renovated as some rows hard a valid year + 0.0 as a string
+-> cleaning to valid year to int datatype
+
+----
+Page 6 (Data filtering geo maps)
+
+Geo Map Pictures:
+- Left is map of all zipcodes found in dataset for Seattle
+- Right is map of filtered zipcodes for central Seattle (zip code >= 98100)
+Idea: get an overview of where houses are in general as just zip codes are 
+not familiar territory
+
+----
+Page 7 (Hypothesis)
+- Introduce the 3 Hypothesis
+---
+Beginning Part 2 Niklas
+----
+Page 8 (Hypothesis 1 living)
+
+- Lot and living separated to due difference in max values (outlier)
+- No trend visible that an increase in total square meter count for living space
+will result in a higher total sell price
+-> meaning Hypothesis 1 part 1 is rejected (not true)
+
+----
+Page 9 (Hypothesis 1 lot)
+
+- Gaps in inbetween
+- no change in the number of bins to keep the chart similar to page 7, keep bins similar and lot sizes comparable 
+- No trend visible that an increase in total square meter count for lot sizes
+will result in a higher total sell price
+-> meaning Hypothesis 1 part 2 is also rejected (not true)
+
+----
+Page 10 (Hypothesis 2 heatmap)
+
+- sqft_lot and sqft_lot15 has the highest correlation with 0.75
+-> probably to due similar lot size in the same neighborhood due to zoning
+-> therefore it is only logical that the correlation is high
+
+- sqft_living and sqft_above has a high correlation with 0.72
+-> sqft_living and sqft_above are quite similar as both describe some form of living space
+-> therefore it is only logical that the correlation is high
+
+Exception:
+- sqft_living and sqft_living15 has a lower correlation then sqft_lot and sqft_lot15
+-> probably due to differences in house sizes, while lot sizes remain similar (e.g. family homes in suburbs)
+
+----
+Page 11 (Hypothesis 2 barchart)
+- Visualation of the correlation of the features to only sell price
+- no feature or features (multiple) indicate a high influence on the price
+- the highest correlation value is 0.14 for grade
+-> meaning Hypothesis 2 is also rejected (not true)
+
+----
+Page 12 (Hypothesis 3 barchart)
+
+Whole data from beginning of may 2014 to end of may 2015 (roughly one year)
+
+Dataset difficult to use to prove Hypothesis 3
+due to:
+- no full first half year in 2014
+- 2014 and 2015 house prices are hard to compare
+- no long term trend visible to make an calculated guess
+-> meaning Hypothesis 3 can not be answered with confidence or data
+
+----
+Page 13 (Recommendation 3 barchart living)
+- Different zipcodes result in smaller differences square meter prices for living space
+- highest over 400, lowest around 150
+- Assumption to why difference?:
+- the more central the zipcode the higher the square meter price
+
+----
+Page 14 (Recommendation 3 barchart lot)
+- Different zipcodes result in drastictly difference square meter prices for lot sizes
+- highest over 400, lowest around 50s
+- Assumption to why difference is eight times?:
+- the more central the zipcode the higher the square meter price
+- other non measurable factors can result in lower square meter price
+(e.g. highways, raillines, airports close by)
+- looking at a map we can see zip code 98168 is in the middle
+of two airports
+
+----
+Page 15 (Recommendation 3 barchart sum)
+- How can Nicole approach the search for a house?
+- it is logical to start with the cheapest zip code first
+- however cheap doesn't mean Lively
+- in the end only a local or someone familiar with the area can suggest the best zipcode
+to use (best price-performance ratio)
+-> as seen in page page 14 zipcode 98168 is the cheapest for lot size however 
+lies directly in between two major airports which may explain the low price
